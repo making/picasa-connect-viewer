@@ -1,0 +1,7 @@
+---
+applications:
+- name: picasa_connect_viewer
+  memory: 8M
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/go-buildpack.git
+  command: picasa_connect_viewer
