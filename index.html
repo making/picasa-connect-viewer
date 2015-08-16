@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{.Title}}</title>
+    <link rel="stylesheet" href="//ik.am/stylesheets/styles.css">
+    <link rel="stylesheet" href="//ik.am/stylesheets/pygment_trac.css">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+<body>
+<div class="wrapper">
+    <h1>{{.Title}}</h1>
+    <div id="gallery">Loading...</div>
+    <div>
+        <p>
+            <small>Powered by 
+	      <a href="https://github.com/making/picasa-connect">Picasa Connect</a>
+	      and
+	      <a href="https://github.com/making/picasa_connect_viewer">Picasa Connect Viewer</a>
+	    </small>
+        </p>
+    </div>
+</div>
+
+<script type="text/javascript">
+    window.PC = {USER_ID: '{{.UserId}}', PAGE_SIZE: {{.PageSize}}};
+</script>
+<script src="//anir.ik.am/javascripts/scale.fix.js"></script>
+<script src="//anir.ik.am/javascripts/react.min.js"></script>
+<script src="//anir.ik.am/javascripts/JSXTransformer.js"></script>
+<script src="//anir.ik.am/javascripts/react-modal.min.js"></script>
+<script src="//anir.ik.am/javascripts/superagent.js"></script>
+<script type="text/jsx" src="//anir.ik.am/gallery.js"></script>
+</body>
